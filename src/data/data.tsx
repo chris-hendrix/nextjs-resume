@@ -78,7 +78,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://github.com/chris-hendrix/nextjs-resume/Resume.pdf',
+      href: 'https://github.com/chris-hendrix/nextjs-resume/raw/main/Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
