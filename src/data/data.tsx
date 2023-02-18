@@ -10,14 +10,13 @@ import {
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import portfolioImage1 from '../images/portfolio/1-chat.jpg';
+import portfolioImage2 from '../images/portfolio/2-baseball.jpg';
+import portfolioImage3 from '../images/portfolio/3-nuclear.jpg';
+import portfolioImage4 from '../images/portfolio/4-earthquake.jpg';
+import portfolioImage5 from '../images/portfolio/5-mp3.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -79,7 +78,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://github.com/chris-hendrix/nextjs-resume/Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -199,23 +198,36 @@ export const education: TimelineItem[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage1,
+    title: 'Next.js Message App',
+    description: 'A "boilerplate" message app with full user authentication.',
+    url: 'https://boilerplate-nextjs-eight.vercel.app/',
+    image: portfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
+    title: 'Fantasy Baseball App',
+    description: 'A custom fantasy baseball webapp built with React and Express.',
+    url: 'https://mit-fantasy-baseball.onrender.com/',
+    image: portfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
-  }
+    title: 'AI Tool for Nuclear Power Plant Maintenance',
+    description: 'Tool that uses NLP to streamline nuclear power plant condition reporting.',
+    url: 'https://www.jensenhughes.com/digital-solutions/dataadvisr-ai-process-improvement',
+    image: portfolioImage3,
+  },
+  {
+    title: 'EPRI Seismic Research',
+    description: `Publication outlining a data based approach to performing nuclear seismic risk assessments. 
+    Image by macrovector on Freepik`,
+    url: 'https://www.epri.com/research/programs/061177/results/3002020572',
+    image: portfolioImage4,
+  },
+  {
+    title: 'MP3 Organizer',
+    description: `Simple .NET desktop app that can tag and organize your mp3 files in a datagrid view.`,
+    url: 'https://www.epri.com/research/programs/061177/results/3002020572',
+    image: portfolioImage5,
+  },
 ];
 
 /**
@@ -228,16 +240,6 @@ export const testimonial: TestimonialSection = {
       name: 'John Doe',
       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
 };
@@ -252,23 +254,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'cmhendrix@alum.mit.edu',
+      href: 'mailto:cmhendrix@alum.mit.edu',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'New York, NY',
+      href: 'https://goo.gl/maps/LHKagmdDMgDJ7Zhh7',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: '/in/chris-hendrix',
+      href: 'https://www.linkedin.com/in/chris-hendrix/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'chris-hendrix',
+      href: 'https://github.com/chris-hendrix',
     },
   ],
 };
@@ -277,9 +279,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/chris-hendrix' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/chris-hendrix/' },
 ];
