@@ -70,7 +70,7 @@ export interface Skill {
 
 export interface SkillGroup {
   name: string;
-  skills: Skill[];
+  skills: string;
 }
 
 /**
@@ -90,7 +90,8 @@ export interface TimelineItem {
   date: string;
   location: string;
   title: string;
-  content: JSX.Element;
+  list?: string[];
+  content?: string;
 }
 
 /**
