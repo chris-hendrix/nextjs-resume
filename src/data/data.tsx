@@ -83,11 +83,11 @@ export const heroData: Hero = {
       primary: true,
       Icon: DownloadIcon,
     },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    // {
+    //   href: `#${SectionId.Contact}`,
+    //   text: 'Contact',
+    //   primary: false,
+    // },
   ],
 };
 
@@ -103,7 +103,7 @@ export const aboutData: About = {
     { label: 'Location', text: 'New York, NY', Icon: MapIcon },
     { label: 'Age', text: '33', Icon: CalendarIcon },
     { label: 'Citizenship', text: 'United States', Icon: FlagIcon },
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    { label: 'Interests', text: 'Baseball, strength training, DJing', Icon: SparklesIcon },
     { label: 'Education', text: 'MIT', Icon: AcademicCapIcon },
     { label: 'Employment', text: 'Emissary.io', Icon: OfficeBuildingIcon },
   ],
