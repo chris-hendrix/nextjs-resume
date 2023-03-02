@@ -71,8 +71,7 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         <strong className="text-stone-100">Baseball</strong> is my lifelong passion, but I also enjoy&nbsp;
-        <strong className="text-stone-100">strength training</strong> and <strong className="text-stone-100">DJing</strong>&nbsp;
-        some tunes in my bedroom.
+        <strong className="text-stone-100">strength training</strong> and bedroom <strong className="text-stone-100">DJing</strong>.
       </p>
     </>
   ),
@@ -142,6 +141,8 @@ export const experience: TimelineItem[] = [
       `Lead revenue-impacting features within the main app, including user search, library search, and email 
       notifications by designing the new MySQL schema, flask endpoints, Elasticsearch indexing, sqlalchemy queries, 
       pytest unit tests, and React components`,
+      `Lead the development of a investor-requested feature of displaying real-time user survey results, and deployed 
+      it to production a sprint earlier than expected`,
       `Planned feature epics by providing user stories based on PRDs as part of an agile development workflow, 
       enabling the swift development of new features by the engineering team`,
       `Lead the upgrade of MySQL in our local Docker environment, as well as our GCP production environment, 
@@ -200,7 +201,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Next.js Message App',
     description: 'A "boilerplate" message app with full user authentication.',
-    url: 'https://boilerplate-nextjs-eight.vercel.app/',
+    url: 'https://boilerplate-nextjs-chris-hendrix.vercel.app/',
     image: portfolioImage1,
   },
   {
